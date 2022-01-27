@@ -23,7 +23,7 @@ const About = () => (
     <p className="about--resume">
       Download my resume &nbsp;
       <span className="bg">
-        <a href={resume} target="_blank">
+        <a href={resume} target="_blank" rel="noreferrer noopener">
           here
         </a>
       </span>

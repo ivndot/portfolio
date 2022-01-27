@@ -39,10 +39,10 @@ const Card = (props) => {
         <p>{description}</p>
       </div>
       <div className="card--footer">
-        <a href={githubLink} target="_blank">
+        <a href={githubLink} target="_blank" rel="noreferrer noopener">
           <img src={githubIcon} alt="icon of github" className="footer--links" />
         </a>
-        <a href={externalLink} target="_blank">
+        <a href={externalLink} target="_blank" rel="noreferrer noopener">
           <img src={externalIcon} alt="icon for external page" className="footer--links" />
         </a>
       </div>

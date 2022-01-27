@@ -1,0 +1,39 @@
+.projects {
+  width: 100%;
+  height: auto;
+  margin-bottom: 18.75rem;
+}
+
+.projects--title {
+  width: 100%;
+  height: auto;
+}
+
+.projects--description {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 3.75rem;
+}
+
+.projects--cards {
+  padding-top: 3.13rem;
+  /*grid*/
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  gap: 3.13rem 0;
+}
+
+/* laptop */
+@media only screen and (max-width: 1200px) {
+  .projects--cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* mobile */
+@media only screen and (max-width: 768px) {
+  .projects--cards{
+    grid-template-columns: 1fr;
+  }
+}

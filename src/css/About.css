@@ -1,0 +1,68 @@
+.about {
+  width: 100%;
+  margin-bottom: 18.75rem;
+}
+
+.about--title {
+  width: auto;
+  height: auto;
+}
+
+.title--name {
+  font-size: 3.1rem;
+  font-weight: 600;
+  margin-bottom: 0.94rem;
+}
+
+.title--degree {
+  display: inline-block;
+  font-size: 1.87rem;
+  font-weight: 400;
+}
+
+.title--student {
+  display: inline-block;
+  font-size: 1.87rem;
+  font-weight: 400;
+  padding-left: 0.62rem;
+}
+
+.about--description {
+  margin-top: 6.25rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.about--resume {
+  margin-top: 12.5rem;
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+.about--resume > span > a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  transition: ease 0.3s;
+}
+
+.about--resume > span > a:hover{
+  transition: ease 0.3s;
+  transform: scale(1.1);
+}
+
+.blob {
+  width: 25rem;
+  height: 15rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/* mobile */
+@media only screen and (max-width: 768px) {
+  .blob {
+    width: 120px;
+    height: 200px;
+  }
+}

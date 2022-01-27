@@ -1,0 +1,55 @@
+.contact {
+  width: 100%;
+  height: auto;
+}
+
+.contact--title {
+  width: 100%;
+}
+
+.contact--description {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 3.75rem;
+  text-align: center;
+}
+
+.contact--email {
+  margin-top: 0.63rem;
+  text-align: center;
+}
+
+.email {
+  color: white;
+  text-decoration: none;
+  font-size: 1.25rem;
+}
+
+.social {
+  width: 100%;
+  height: auto;
+  margin-top: 12.5rem;
+  /*flexbox*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.social--line {
+  width: 9.37rem;
+  height: 0.13rem;
+  background-color: white;
+}
+
+.social--icon {
+  text-decoration: none;
+  color: white;
+  transition: ease 0.3s;
+}
+
+.social--icon:hover {
+  color: var(--accent);
+  transition: ease 0.3s;
+  transform: translateY(-0.31rem);
+}

@@ -18,7 +18,7 @@ const Contact = () => (
     <div className="social">
       <div className="social--line"></div>
       {/* github */}
-      <a href="https://github.com/ivndot" target="_blank" className="social--icon">
+      <a href="https://github.com/ivndot" target="_blank" className="social--icon" rel="noreferrer noopener">
         <svg
           fill="currentColor"
           xmlns="http://www.w3.org/2000/svg"
@@ -30,7 +30,7 @@ const Contact = () => (
         </svg>
       </a>
       {/* twitter */}
-      <a href="https://twitter.com/ivndot" target="_blank" className="social--icon">
+      <a href="https://twitter.com/ivndot" target="_blank" className="social--icon" rel="noreferrer noopener">
         <svg
           fill="currentColor"
           xmlns="http://www.w3.org/2000/svg"
@@ -42,7 +42,12 @@ const Contact = () => (
         </svg>
       </a>
       {/* linkedin */}
-      <a href="https://www.linkedin.com/in/ivan-a-713203230/" target="_blank" className="social--icon">
+      <a
+        href="https://www.linkedin.com/in/ivan-a-713203230/"
+        target="_blank"
+        className="social--icon"
+        rel="noreferrer noopener"
+      >
         <svg
           fill="currentColor"
           xmlns="http://www.w3.org/2000/svg"

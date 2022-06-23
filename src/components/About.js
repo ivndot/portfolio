@@ -2,7 +2,7 @@ import React from "react";
 //styles
 import "../css/About.css";
 import blob from "../img/blob.svg";
-import resume from "../files/Ivan_Alamos_resume.pdf";
+import resume from "../files/Ivan_Alamos_CV.pdf";
 
 const About = () => (
   <section className="about">

@@ -31,6 +31,27 @@ const projects = [
     githubLink: "https://github.com/ivndot/todo-list",
     externalLink: "https://suspicious-kare-dc55cd.netlify.app/",
   },
+  {
+    projectName: "Maria IoT",
+    description:
+      "A webapp that get the temperature in real time with websockets from an LM35 sensor and controls an IoT device (Fan and led's) with an assistant called 'Maria' through voice commands.",
+    githubLink: "https://github.com/ivndot/maria-iot",
+    externalLink: "https://splendid-gelato-81ae0d.netlify.app/",
+  },
+  {
+    projectName: "API-IoT",
+    description:
+      "API developed in NodeJS with express and websockets that get temperature from an LM35 sensor and store the data in a MySQL database, also controls the 'mode' of an IoT device (Fan and led's controlled by a NodeMCU esp8266 module).",
+    githubLink: "https://github.com/ivndot/api-iot",
+    externalLink: "https://api-iot-maria.herokuapp.com/",
+  },
+  {
+    projectName: "API-StPharm",
+    description:
+      "API developed in Nodejs with express for an Android application created with React Native and Expo. This app was designed to help independent pharmacy owners by manage the expiring date of the medicines in their stock, saving money and having a better managment with their products.",
+    githubLink: "https://github.com/ivndot/api-stpharm",
+    externalLink: "https://api-stpharm.herokuapp.com/",
+  },
 ];
 
 const Projects = () => (
@@ -40,12 +61,10 @@ const Projects = () => (
         <span className="bg">Projects</span>
       </h1>
     </div>
-    <p className="projects--description">These are things that i have developed in ReactJS and Java</p>
+    <p className="projects--description">These are things that i have developed in ReactJS, NodeJS and Java</p>
     {/* cards */}
     <div className="projects--cards">
-      {projects.map((item, idx) => (
-        <Card key={idx} project={item} />
-      ))}
+      {projects.map((item, idx) => <Card key={idx} project={item} />)}
     </div>
   </section>
 );

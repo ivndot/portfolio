@@ -1,0 +1,85 @@
+.footer {
+  width: 100%;
+  height: 500px;
+  padding: 20px 30px;
+  background-color: var(--primary);
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.about__user {
+  display: block;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--background);
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.about__role {
+  font-size: 16px;
+  font-weight: normal;
+  color: var(--background);
+  text-align: center;
+}
+
+.footer__social {
+  width: 100%;
+  height: auto;
+}
+
+.social__icons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.social__separator {
+  width: 2px;
+  height: 40px;
+  border-left: 1px dashed var(--background);
+  margin: 15px auto;
+}
+
+.social__description {
+  font-size: 16px;
+  font-weight: normal;
+  color: var(--background);
+  text-align: center;
+}
+
+.button__container {
+  width: 50px;
+  height: 50px;
+  background-color: var(--c);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.footer__button > span {
+  display: block;
+  font-size: 14px;
+  font-weight: normal;
+  color: var(--background);
+  text-align: center;
+  margin-top: 10px;
+  border: none;
+}
+
+/**
+ *====================================================================================
+ *                                       Desktop                                     *
+ *====================================================================================
+*/
+@media screen and (min-width: 992px) {
+  .footer {
+    flex-flow: row nowrap;
+  }
+
+  .footer__social {
+    width: 30%;
+  }
+}

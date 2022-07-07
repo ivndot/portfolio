@@ -1,0 +1,59 @@
+.navbar {
+  width: 100%;
+  height: 80px;
+  background-color: var(--background);
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 100px;
+  z-index: 2;
+  transition: background ease 0.4s;
+}
+
+.navbar__logo {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.navbar__items {
+  color: var(--background);
+}
+
+.navbar__item {
+  text-decoration: none;
+  color: var(--primary);
+  font-size: 22px;
+  font-weight: normal;
+  margin: 0 20px;
+}
+
+.navbar__item--ligth {
+  color: var(--background);
+}
+
+.navbar__item:hover {
+  text-decoration: underline dotted;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.navbar--dark {
+  background-color: var(--primary);
+}
+
+/**
+ *====================================================================================
+ *                                       Desktop                                     *
+ *====================================================================================
+*/
+@media screen and (min-width: 992px) {
+  .navbar {
+    display: flex;
+  }
+}

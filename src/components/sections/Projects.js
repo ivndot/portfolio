@@ -1,13 +1,19 @@
 import React from "react";
-//styles
-import "../css/Projects.css";
-import Card from "./Card";
+// styles
+import "../../css/Projects.css";
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+// icons
+import AstronautIcon from "../icons/AstronautIcon";
+import PlanetCardIcon from "../icons/PlanetCardIcon";
+// components
+import CardProject from "../CardProject";
+import { Carousel } from "react-responsive-carousel";
 
 const projects = [
   {
     projectName: "API-RSA",
     description:
-      "This is an API developed in JAVA that allows you to encrypt and decrypt plain text or text of a file with the RSA method. It also can generate a key-pair (public and private key).",
+      "This is an API developed in JAVA that allows you to encrypt and decrypt plain text or text of a file with the RSA method. It can also generate a key-pair (public and private key) files.",
     githubLink: "https://github.com/ivndot/api-rsa",
     externalLink: "https://api-rsa.herokuapp.com/",
   },
@@ -48,25 +54,39 @@ const projects = [
   {
     projectName: "API-StPharm",
     description:
-      "API developed in Nodejs with express for an Android application created with React Native and Expo. This app was designed to help independent pharmacy owners by manage the expiring date of the medicines in their stock, saving money and having a better managment with their products.",
+      "API developed in Nodejs with express for an Android application created with React Native and Expo. This app was designed to help independent pharmacy owners by manage the expiring date of the medicines in their stock, saving money and having a better managment of their products.",
     githubLink: "https://github.com/ivndot/api-stpharm",
     externalLink: "https://api-stpharm.herokuapp.com/",
   },
 ];
 
-const Projects = () => (
-  <section className="projects">
-    <div className="projects--title">
-      <h1 className="title" id="projects">
-        <span className="bg">Projects</span>
-      </h1>
-    </div>
-    <p className="projects--description">These are things that i have developed in ReactJS, NodeJS and Java</p>
-    {/* cards */}
-    <div className="projects--cards">
-      {projects.map((item, idx) => <Card key={idx} project={item} />)}
-    </div>
-  </section>
-);
+const Projects = () => {
+  return (
+    <section className="projects">
+      <div className="projects__header">
+        <AstronautIcon />
+        <h3 id="Projects" className="header__title">
+          Projects
+        </h3>
+      </div>
+      <div className="projects__carousel">
+        <PlanetCardIcon className="projects__planet" />
+        <Carousel
+          axis="horizontal"
+          emulateTouch
+          infiniteLoop
+          showThumbs={false}
+          showIndicators={true}
+          showStatus={false}
+          dynamicHeight
+        >
+          {projects.map((project, idx) => (
+            <CardProject key={idx} project={project} />
+          ))}
+        </Carousel>
+      </div>
+    </section>
+  );
+};
 
-export default Projects;
+export default React.memo(Projects);

@@ -13,50 +13,58 @@ const projects = [
   {
     projectName: "API-RSA",
     description:
-      "This is an API developed in JAVA that allows you to encrypt and decrypt plain text or text of a file with the RSA method. It can also generate a key-pair (public and private key) files.",
+      "This is an API developed with java servlets that allows you to encrypt and decrypt plain text or text of a file with the RSA method. It can also generate a key-pair (public and private key) files.",
     githubLink: "https://github.com/ivndot/api-rsa",
     externalLink: "https://api-rsa.herokuapp.com/",
   },
   {
-    projectName: "Webapp RSA",
+    projectName: "RSA Encryption",
     description:
-      "Here I consume the API-RSA from a webapp, where you can encrypt, decrypt and download a key-pair of 256 bits.",
+      "Here I consume the API-RSA from a webapp developed with ReactJS, where you can encrypt, decrypt and download a key-pair of 4096 bits.",
     githubLink: "https://github.com/ivndot/frontend-rsa",
     externalLink: "https://wizardly-bell-7ddb9a.netlify.app/",
   },
   {
+    projectName: "El rincón del tragón",
+    description:
+      "A webapp built with java servlets and stores data in a MySQL database that shows a list of recipes where you can search and filter by best raiting and also manage user sessions.",
+    githubLink: "https://github.com/ivndot/el-rincon-del-tragon",
+    externalLink: "https://el-rincon-del-tragon.herokuapp.com/",
+  },
+  {
+    projectName: "API-IoT",
+    description:
+      "API developed with express and websockets that gets the temperature from an LM35 sensor and stores the data in a MySQL database, controls also the 'mode' of an IoT device (Fan and led's controlled by a NodeMCU esp8266 module).",
+    githubLink: "https://github.com/ivndot/api-iot",
+    externalLink: "https://api-iot-maria.herokuapp.com/",
+  },
+  {
+    projectName: "Maria IoT",
+    description:
+      "A webapp developed with ReactJS that consumes the API-IoT, getting the temperature in real time with websockets from an LM35 sensor and controlling an IoT device (Fan and led's) that can also be controlled by an assistant called 'Maria' through voice commands.",
+    githubLink: "https://github.com/ivndot/maria-iot",
+    externalLink: "https://splendid-gelato-81ae0d.netlify.app/",
+  },
+  {
+    projectName: "API-StPharm",
+    description:
+      "API developed with express for an Android application created with React Native and Expo. This app was designed to help independent pharmacy owners by manage the expiring date of the medicines in their stock, saving money and having a better managment of their products.",
+    githubLink: "https://github.com/ivndot/api-stpharm",
+    externalLink: "https://api-stpharm.herokuapp.com/",
+  },
+  {
     projectName: "Yelsan",
     description:
-      "This is a webapp built for the Yelsan company. They needed a mobile/web app that allow their employees fill out forms about the parameters that each department of a store have to follow (auditing).",
+      "This is a webapp developed with ReactJS and Firebase for the Yelsan company. They needed a mobile/web app that allow their employees fill out forms about the parameters that each department of a store have to follow (auditing).",
     githubLink: "https://github.com/ivndot/yelsan",
     externalLink: "https://focused-lamport-ae857c.netlify.app/",
   },
   {
     projectName: "To-Do",
-    description: "A simple to-do list with some additional features.",
+    description:
+      "A to-do list developed with ReactJS with some additional features like filter by state, activate or complete all items and remove completed ones.",
     githubLink: "https://github.com/ivndot/todo-list",
     externalLink: "https://suspicious-kare-dc55cd.netlify.app/",
-  },
-  {
-    projectName: "Maria IoT",
-    description:
-      "A webapp that get the temperature in real time with websockets from an LM35 sensor and controls an IoT device (Fan and led's) with an assistant called 'Maria' through voice commands.",
-    githubLink: "https://github.com/ivndot/maria-iot",
-    externalLink: "https://splendid-gelato-81ae0d.netlify.app/",
-  },
-  {
-    projectName: "API-IoT",
-    description:
-      "API developed in NodeJS with express and websockets that get temperature from an LM35 sensor and store the data in a MySQL database, also controls the 'mode' of an IoT device (Fan and led's controlled by a NodeMCU esp8266 module).",
-    githubLink: "https://github.com/ivndot/api-iot",
-    externalLink: "https://api-iot-maria.herokuapp.com/",
-  },
-  {
-    projectName: "API-StPharm",
-    description:
-      "API developed in Nodejs with express for an Android application created with React Native and Expo. This app was designed to help independent pharmacy owners by manage the expiring date of the medicines in their stock, saving money and having a better managment of their products.",
-    githubLink: "https://github.com/ivndot/api-stpharm",
-    externalLink: "https://api-stpharm.herokuapp.com/",
   },
 ];
 

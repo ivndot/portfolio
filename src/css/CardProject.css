@@ -1,41 +1,71 @@
 .card {
   width: 100%;
   max-width: 800px;
-  height: 550px;
+  height: 700px;
   background: rgb(26, 42, 90);
   background: linear-gradient(180deg, rgba(26, 42, 90, 1) 0%, rgba(7, 10, 21, 1) 100%);
+  border: none;
   border-radius: 10px;
-  padding: 30px 30px;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 2fr 1fr;
+  display: flex;
+  flex-flow: column nowrap;
+  overflow: hidden;
 }
 
-.card__title {
-  grid-column: 1 / 2;
-  grid-row: 1 / 2;
-  align-self: center;
+.card__thumb-container {
+  width: 100%;
+  height: auto;
+  /* height: 210px; */
+  overflow: hidden;
+}
+
+.card__thumb {
+  width: 100%;
+  /* height: 210px; */
+  padding-bottom: 60%;
+  /* background-image: url("../../public/img/rincon.png"); */
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: transform 0.4s ease;
+}
+
+.card__content {
+  width: 100%;
+  flex: 1;
+  padding: 30px 30px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content__title {
   font-size: 32px;
   font-weight: 600;
   color: var(--e);
   text-align: center;
 }
 
-.card__description {
-  grid-column: 1 / 2;
-  grid-row: 2 / 3;
-  align-self: center;
+.content__description {
   font-size: 16px;
   font-weight: normal;
   color: var(--background);
   text-align: justify;
   line-height: 30px;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
 }
 
-.card__links {
-  grid-column: 1 / 2;
-  grid-row: 3 / 4;
-  align-self: center;
+.content__tech {
+  margin-bottom: 30px;
+  align-self: flex-end;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--d);
+}
+
+.content__links {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -53,8 +83,18 @@
 */
 @media screen and (min-width: 992px) {
   .card {
-    height: 400px;
-    padding-left: 50px;
-    padding-right: 50px;
+    height: 530px;
+  }
+
+  .card__thumb{
+    padding-bottom: 30%;
+  }
+
+  .card__thumb:hover {
+    transform: scale(1.05);
+  }
+
+  .card__content {
+    padding: 30px 50px;
   }
 }

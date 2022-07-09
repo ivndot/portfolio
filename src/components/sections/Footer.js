@@ -22,7 +22,7 @@ const Footer = () => {
           <a href="https://twitter.com/ivndot" target="_blank" rel="noreferrer noopener">
             <TwitterIcon width={30} height={30} fill="#fdfdfd" className="animate-icon" />
           </a>
-          <a href="https://www.linkedin.com/in/ivan-a-713203230/" target="_blank" rel="noreferrer noopener">
+          <a href="https://www.linkedin.com/in/ivan-alamos/" target="_blank" rel="noreferrer noopener">
             <LinkedinIcon width={30} height={30} fill="#fdfdfd" className="animate-icon" />
           </a>
         </div>

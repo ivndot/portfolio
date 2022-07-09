@@ -1,8 +1,6 @@
 import React from "react";
 // styles
 import "../../css/Landing.css";
-// resume
-import resume from "../../files/Ivan_Alamos_CV.pdf";
 // icons
 import PlanetLanding from "../icons/PlanetLanding";
 import SpaceshipLanding from "../icons/SpaceshipLanding";
@@ -22,7 +20,7 @@ const Landing = () => {
           <p className="greetings__description">
             I build things with javascript and java, checkout my projects below or if you prefer, download my
             resume&nbsp;
-            <a href={resume} className="highlight" target="_blank" rel="noreferrer noopener">
+            <a href="/files/Ivan_Alamos_CV.pdf" className="highlight" target="_blank" rel="noreferrer noopener">
               here
             </a>
           </p>

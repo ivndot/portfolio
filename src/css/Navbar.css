@@ -7,7 +7,7 @@
   align-items: center;
   padding: 0 100px;
   z-index: 2;
-  transition: background ease 0.4s;
+  transition: background-color ease 0.5s;
 }
 
 .navbar__logo {
@@ -45,6 +45,7 @@
 
 .navbar--dark {
   background-color: var(--primary);
+  transition: background-color ease 0.5s;
 }
 
 /**

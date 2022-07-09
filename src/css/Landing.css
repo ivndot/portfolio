@@ -35,14 +35,14 @@
   right: 230px;
   top: 0px;
   /* animation: spaceship_float 2s ease 0s infinite; */
-  animation: spaceship_fly 3s ease-in-out 0s infinite;
+  animation: spaceship_fly 5s ease-in-out 0s infinite;
 }
 
 .planet--animation {
   position: absolute;
   right: 20px;
   /* animation: planet_float 2s ease 0s infinite; */
-  animation: planet_spin 5s linear 0s infinite;
+  animation: planet_spin 7s linear 0s infinite;
 }
 
 .landing__greetings {

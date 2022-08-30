@@ -44,7 +44,7 @@ const projects = [
       "API that gets the temperature from an LM35 sensor, controls also the 'mode' of an IoT device (Fan and led's controlled by a NodeMCU esp8266 module).",
     technologies: ["NodeJS", "Express", "Socket.io", "MySQL"],
     githubLink: "https://github.com/ivndot/api-iot",
-    externalLink: "https://api-iot-maria.herokuapp.com/",
+    externalLink: "https://api-iot.up.railway.app/",
   },
   {
     projectName: "Maria IoT",
@@ -53,7 +53,7 @@ const projects = [
       "A webapp that consumes the API-IoT, getting the temperature in real time with websockets from an LM35 sensor and controlling an IoT device (Fan and led's) that can also be controlled by an assistant called 'Maria' through voice commands.",
     technologies: ["ReactJS", "Socket.io", "Axios", "SpeechRecognitionAPI"],
     githubLink: "https://github.com/ivndot/maria-iot",
-    externalLink: "https://splendid-gelato-81ae0d.netlify.app/",
+    externalLink: "https://maria-iot.netlify.app/",
   },
   {
     projectName: "API-StPharm",
@@ -62,7 +62,7 @@ const projects = [
       "API for an Android application created with React Native and Expo. This app was designed to help independent pharmacy owners managing the expiring date of the medicines in their stock, saving money and having a better managment of their products.",
     technologies: ["NodeJS", "Express", "Firestore", "Firebase auth"],
     githubLink: "https://github.com/ivndot/api-stpharm",
-    externalLink: "https://api-stpharm.herokuapp.com/",
+    externalLink: "https://api-stpharm.up.railway.app/",
   },
   {
     projectName: "Yelsan",
@@ -71,7 +71,7 @@ const projects = [
       "This is a webapp for the Yelsan company. They needed a mobile/web app that allow their employees fill out forms about the parameters that each department of a store have to follow (auditing).",
     technologies: ["ReactJS", "Firestore", "Axios", "Formik"],
     githubLink: "https://github.com/ivndot/yelsan",
-    externalLink: "https://focused-lamport-ae857c.netlify.app/",
+    externalLink: "https://yelsan.netlify.app",
   },
   {
     projectName: "To-Do",
@@ -80,7 +80,7 @@ const projects = [
       "A to-do list with some additional features like filter by state, activate or complete all items and remove completed ones.",
     technologies: ["ReactJS"],
     githubLink: "https://github.com/ivndot/todo-list",
-    externalLink: "https://suspicious-kare-dc55cd.netlify.app/",
+    externalLink: "https://to-do-list-ivn.netlify.app",
   },
 ];
 

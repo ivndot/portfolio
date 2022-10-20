@@ -12,7 +12,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer__about">
         <span className="about__user">ivndot</span>
-        <p className="about__role">Frontend developer</p>
+        <p className="about__role">Web developer</p>
       </div>
       <div className="footer__social">
         <div className="social__icons">

@@ -9,7 +9,7 @@ const Landing = () => {
   return (
     <section className="landing">
       <h1 className="landing__name">Ivan Alamos</h1>
-      <h2 className="landing__role">Frontend developer</h2>
+      <h2 className="landing__role">Web developer</h2>
       <div className="landing__content">
         <div className="landing__planet-container">
           <SpaceshipLanding className="spaceship--animation" />
@@ -20,7 +20,7 @@ const Landing = () => {
           <p className="greetings__description">
             I build things with javascript and java, checkout my projects below or if you prefer, download my
             resume&nbsp;
-            <a href="/files/Ivan_Alamos_CV.pdf" className="highlight" target="_blank" rel="noreferrer noopener">
+            <a href="/files/Ivan_Alamos_Resume.pdf" className="highlight" target="_blank" rel="noreferrer noopener">
               here
             </a>
           </p>

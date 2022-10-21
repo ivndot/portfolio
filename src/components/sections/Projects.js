@@ -26,7 +26,7 @@ const projects = [
       "This is an API that allows you to encrypt and decrypt plain text or text of a file with the RSA method. It can also generate a key-pair (public and private key) files.",
     technologies: ["Java", "Servlets"],
     githubLink: "https://github.com/ivndot/api-rsa",
-    externalLink: "https://api-rsa.herokuapp.com/"
+    externalLink: "https://api-rsa.onrender.com/api-rsa/"
   },
   {
     projectName: "RSA Encryption",

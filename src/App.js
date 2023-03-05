@@ -4,8 +4,9 @@ import "./css/App.css";
 // components
 import Portfolio from "./pages/Portofolio";
 import Blog from "./pages/Blog";
+import NotFound from "./components/sections/NotFound";
 // wouter
-import { Route } from "wouter";
+import { Route, Switch } from "wouter";
 
 const App = () => {
   /**
@@ -14,11 +15,11 @@ const App = () => {
    * =============================================================================
    */
   return (
-    <>
+    <Switch>
       <Route path="/" component={Portfolio} />
       <Route path="/blog" component={Blog} />
-      <Route>404 Not Found!</Route>
-    </>
+      <Route component={NotFound}/>
+    </Switch>
   );
 };
 

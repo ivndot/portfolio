@@ -34,18 +34,46 @@ const Navbar = () => {
    */
   return (
     <nav className={offset ? "navbar sticky navbar--dark" : "navbar"}>
-      <a href="#" className={offset ? "navbar__logo navbar__item--ligth" : "navbar__logo"}>
+      <a
+        href="#"
+        className={offset ? "navbar__logo navbar__item--ligth" : "navbar__logo"}
+      >
         ivndot
       </a>
       <div className="navbar__items">
-        <a href="#Skills" className={offset ? "navbar__item navbar__item--ligth" : "navbar__item"}>
+        <a
+          href="#Skills"
+          className={
+            offset ? "navbar__item navbar__item--ligth" : "navbar__item"
+          }
+        >
           Skills
         </a>
-        <a href="#Projects" className={offset ? "navbar__item navbar__item--ligth" : "navbar__item"}>
+        <a
+          href="#Projects"
+          className={
+            offset ? "navbar__item navbar__item--ligth" : "navbar__item"
+          }
+        >
           Projects
         </a>
-        <a href="#Contact" className={offset ? "navbar__item navbar__item--ligth" : "navbar__item"}>
+        <a
+          href="#Contact"
+          className={
+            offset ? "navbar__item navbar__item--ligth" : "navbar__item"
+          }
+        >
           Contact
+        </a>
+        <a
+          href="https://blog-ivndot.netlify.app/"
+          className={
+            offset ? "navbar__item navbar__item--ligth" : "navbar__item"
+          }
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          Blog
         </a>
       </div>
     </nav>

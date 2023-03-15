@@ -18,11 +18,17 @@ const Landing = () => {
         <div className="landing__greetings">
           <h3 className="greetings__title"> Hi everyone!</h3>
           <p className="greetings__description">
-            I&rsquo;m a developer and pentesting enthusiast. I build things with javascript and java, checkout my projects below or if you prefer, download my
-            resume&nbsp;
-            <a href="/files/Ivan_Alamos_Resume.pdf" className="highlight" target="_blank" rel="noreferrer noopener">
-              here
+            I&rsquo;m a developer and cybersecurity enthusiast. I build things
+            with javascript and java, checkout my projects below and visit my&nbsp;
+            <a
+              href="https://blog-ivndot.netlify.app/"
+              className="highlight"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              blog
             </a>
+            &nbsp;where I write walkthroughs of TryHackMe and HackTheBox machines.
           </p>
         </div>
       </div>

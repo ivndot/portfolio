@@ -9,7 +9,7 @@ const Landing = () => {
   return (
     <section className="landing">
       <h1 className="landing__name">Ivan Alamos</h1>
-      <h2 className="landing__role">Web developer</h2>
+      <h2 className="landing__role">Software Developer</h2>
       <div className="landing__content">
         <div className="landing__planet-container">
           <SpaceshipLanding className="spaceship--animation" />

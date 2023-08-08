@@ -44,7 +44,7 @@ const projects = [
       "A webapp that shows a list of recipes where you can search and filter by best raiting and also manage user sessions.",
     technologies: ["Java", "Servlets", "MySQL", "Bootstrap"],
     githubLink: "https://github.com/ivndot/el-rincon-del-tragon",
-    externalLink: "https://el-rincon-del-tragon.herokuapp.com/"
+    externalLink: "https://el-rincon-del-tragon.onrender.com/el-rincon-del-tragon"
   },
   {
     projectName: "API-IoT",

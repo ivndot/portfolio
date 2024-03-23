@@ -11,13 +11,31 @@ import { Carousel } from "react-responsive-carousel";
 
 const projects = [
   {
-    projectName: "Giffy",
-    imgName: "giffy.png",
+    projectName: "API-StPharm",
+    imgName: "api_stpharm.png",
     description:
-      "Webapp that shows Gifs obtained from the Giphy API. The app also have: Infinite scroll, search bar and a section of trend topics",
-    technologies: ["Reactjs", "Tailwindcss"],
-    githubLink: "https://github.com/ivndot/giffy",
-    externalLink: "https://giffy-ivndot.netlify.app/"
+      "API for an Android application created with React Native and Expo. This app was designed to help independent pharmacy owners managing the expiring date of the medicines in their stock, saving money and having a better managment of their products.",
+    technologies: ["Nodejs", "Express", "Firestore", "Firebase auth"],
+    githubLink: "https://github.com/ivndot/api-stpharm",
+    externalLink: "https://api-stpharm.onrender.com"
+  },
+  {
+    projectName: "API-IoT",
+    imgName: "api_iot.png",
+    description:
+      "API that gets the temperature from an LM35 sensor, controls also the 'mode' of an IoT device (Fan and led's controlled by a NodeMCU esp8266 module).",
+    technologies: ["Nodejs", "Express", "Socket.io", "MySQL"],
+    githubLink: "https://github.com/ivndot/api-iot",
+    externalLink: "https://api-iot.onrender.com"
+  },
+  {
+    projectName: "Maria IoT",
+    imgName: "maria.png",
+    description:
+      "A webapp that consumes the API-IoT, getting the temperature in real time with websockets from an LM35 sensor and controlling an IoT device (Fan and led's) that can also be controlled by an assistant called 'Maria' through voice commands.",
+    technologies: ["Reactjs", "Socket.io", "Axios", "SpeechRecognitionAPI"],
+    githubLink: "https://github.com/ivndot/maria-iot",
+    externalLink: "https://maria-iot.netlify.app/"
   },
   {
     projectName: "API-RSA",
@@ -47,33 +65,6 @@ const projects = [
     externalLink: "https://el-rincon-del-tragon.onrender.com/el-rincon-del-tragon"
   },
   {
-    projectName: "API-IoT",
-    imgName: "api_iot.png",
-    description:
-      "API that gets the temperature from an LM35 sensor, controls also the 'mode' of an IoT device (Fan and led's controlled by a NodeMCU esp8266 module).",
-    technologies: ["Nodejs", "Express", "Socket.io", "MySQL"],
-    githubLink: "https://github.com/ivndot/api-iot",
-    externalLink: "https://api-iot.onrender.com"
-  },
-  {
-    projectName: "Maria IoT",
-    imgName: "maria.png",
-    description:
-      "A webapp that consumes the API-IoT, getting the temperature in real time with websockets from an LM35 sensor and controlling an IoT device (Fan and led's) that can also be controlled by an assistant called 'Maria' through voice commands.",
-    technologies: ["Reactjs", "Socket.io", "Axios", "SpeechRecognitionAPI"],
-    githubLink: "https://github.com/ivndot/maria-iot",
-    externalLink: "https://maria-iot.netlify.app/"
-  },
-  {
-    projectName: "API-StPharm",
-    imgName: "api_stpharm.png",
-    description:
-      "API for an Android application created with React Native and Expo. This app was designed to help independent pharmacy owners managing the expiring date of the medicines in their stock, saving money and having a better managment of their products.",
-    technologies: ["Nodejs", "Express", "Firestore", "Firebase auth"],
-    githubLink: "https://github.com/ivndot/api-stpharm",
-    externalLink: "https://api-stpharm.onrender.com"
-  },
-  {
     projectName: "Yelsan",
     imgName: "yelsan.png",
     description:
@@ -81,15 +72,6 @@ const projects = [
     technologies: ["Reactjs", "Firestore", "Axios", "Formik"],
     githubLink: "https://github.com/ivndot/yelsan",
     externalLink: "https://yelsan.netlify.app"
-  },
-  {
-    projectName: "To-Do",
-    imgName: "todo.png",
-    description:
-      "A to-do list with some additional features like filter by state, activate or complete all items and remove completed ones.",
-    technologies: ["Reactjs"],
-    githubLink: "https://github.com/ivndot/todo-list",
-    externalLink: "https://to-do-list-ivn.netlify.app"
   }
 ];
 
